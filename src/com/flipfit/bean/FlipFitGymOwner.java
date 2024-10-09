@@ -40,7 +40,7 @@ public class FlipFitGymOwner extends User {
     }
 
     public FlipFitGymOwner(String userId, String userName, String email, String password, String panNumber, int isApproved, String cardDetails) {
-        super(userId, userName, email, password);
+        super(userId, userName, email, password, Role.GYMOWNER);
         this.panNumber = panNumber;
         this.isApproved = isApproved;
         this.cardDetails = cardDetails;

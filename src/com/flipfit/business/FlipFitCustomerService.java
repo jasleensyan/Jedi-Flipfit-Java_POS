@@ -3,6 +3,7 @@ package com.flipfit.business;
 import com.flipfit.bean.Booking;
 import com.flipfit.bean.FlipFitCustomer;
 import com.flipfit.bean.FlipFitGymCentre;
+import com.flipfit.exception.InvalidCredentialsException;
 
 import java.sql.Date;
 import java.sql.Timestamp;
@@ -75,7 +76,7 @@ public class FlipFitCustomerService implements FlipFitCustomerServiceInterface{
     }
 
     @Override
-    public void customerChangePassword(String userName, String old_password, String new_password) throws WrongCredentialsException {
+    public void customerChangePassword(String userName, String old_password, String new_password) throws InvalidCredentialsException {
 
     }
 }
