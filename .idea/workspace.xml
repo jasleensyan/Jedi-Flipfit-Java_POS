@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0920dba2-a305-49be-bb30-965f9cc46be1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitApplicationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitApplicationClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipfit/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/constant/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitAdminMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitAdminMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitApplicationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitApplicationMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +42,11 @@
   "keyToString": {
     "Application.FlipfitApplicationClient.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "clientClass",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Applications/JEDI-Flipfit-JAVA-POS/src/com/flipfit/bean",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -73,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728450962283</updated>
       <workItem from="1728450963263" duration="1172000" />
-      <workItem from="1728454953346" duration="5568000" />
+      <workItem from="1728454953346" duration="7662000" />
     </task>
     <servers />
   </component>
