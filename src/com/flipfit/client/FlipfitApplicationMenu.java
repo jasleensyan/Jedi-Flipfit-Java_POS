@@ -1,11 +1,10 @@
 package com.flipfit.client;
 
-import com.flipfit.constant.Constants;
 import java.util.Scanner;
 
 import static com.flipfit.constant.Constants.*;
 
-public class FlipfitApplicationClient {
+public class FlipfitApplicationMenu {
     public static Scanner scanner = new Scanner(System.in);
 
     private static void mainPage(){
