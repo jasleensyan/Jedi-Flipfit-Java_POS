@@ -1,7 +1,7 @@
 package com.flipfit.bean;
 import java.util.List;
 
-public class GymOwner extends User {
+public class FlipFitGymOwner extends User {
 
     public String getPanNumber() {
         return panNumber;
@@ -36,10 +36,10 @@ public class GymOwner extends User {
         this.cardDetails = cardDetails;
     }
 
-    public GymOwner() {
+    public FlipFitGymOwner() {
     }
 
-    public GymOwner(String userId, String userName, String email, String password, String panNumber, int isApproved, String cardDetails) {
+    public FlipFitGymOwner(String userId, String userName, String email, String password, String panNumber, int isApproved, String cardDetails) {
         super(userId, userName, email, password);
         this.panNumber = panNumber;
         this.isApproved = isApproved;

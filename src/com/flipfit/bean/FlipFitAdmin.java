@@ -1,10 +1,8 @@
 package com.flipfit.bean;
 
-import com.flipfit.bean.User;
 
+public class FlipFitAdmin extends User{
 
-public class Admin extends User{
-
-    public Admin() {
+    public FlipFitAdmin() {
         super("0","root", "admin@flipfit.com", "123",Role.ADMIN);}
 }

@@ -1,6 +1,6 @@
 package com.flipfit.bean;
 
-public class GymCentre {
+public class FlipFitGymCentre {
 
  private String centreId;
  private String ownerId;
@@ -11,7 +11,7 @@ public class GymCentre {
  private int isApproved;
  private float amountPerSlot;
 
-    public GymCentre(String centreId, String ownerId, String centreName, String gstNo, String city, int capacity, int isApproved, float amountPerSlot) {
+    public FlipFitGymCentre(String centreId, String ownerId, String centreName, String gstNo, String city, int capacity, int isApproved, float amountPerSlot) {
         this.centreId = centreId;
         this.ownerId = ownerId;
         this.centreName = centreName;
