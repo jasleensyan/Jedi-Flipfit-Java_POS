@@ -22,5 +22,6 @@ public interface FlipFitCustomerServiceInterface {
     public String addSchedule(Timestamp timestamp, String slotId);
     public float getGymCentreCostFromCentreId(String centerId);
     public String addPayment(String bookingID, float amountPaid);
+    public void customerChangePassword(String userName,String old_password,String new_password) throws WrongCredentialsException;
 
 }

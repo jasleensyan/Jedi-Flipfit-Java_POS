@@ -8,5 +8,6 @@ public interface FlipFitGymOwnerServiceInterface {
     public void viewAllGymOwners();
     public String getGymOwnerId(String userName, String password);
     public void requestGymOwnerApproval(String gymOwnerId);
+    public void gymOwnerChangePassword(String userName,String old_password,String new_password);
 
 }

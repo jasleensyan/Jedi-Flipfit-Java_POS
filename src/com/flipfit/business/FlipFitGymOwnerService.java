@@ -27,4 +27,9 @@ public class FlipFitGymOwnerService implements FlipFitGymOwnerServiceInterface {
     public void requestGymOwnerApproval(String gymOwnerId) {
 
     }
+
+    @Override
+    public void gymOwnerChangePassword(String userName, String old_password, String new_password) {
+
+    }
 }
