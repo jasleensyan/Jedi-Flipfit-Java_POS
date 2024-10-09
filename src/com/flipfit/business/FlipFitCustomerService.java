@@ -73,4 +73,9 @@ public class FlipFitCustomerService implements FlipFitCustomerServiceInterface{
     public String addPayment(String bookingID, float amountPaid) {
         return "";
     }
+
+    @Override
+    public void customerChangePassword(String userName, String old_password, String new_password) throws WrongCredentialsException {
+
+    }
 }

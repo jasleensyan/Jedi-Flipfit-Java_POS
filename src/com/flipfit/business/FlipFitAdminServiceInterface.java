@@ -9,4 +9,6 @@ public interface FlipFitAdminServiceInterface {
     public void viewAllGymCentres();
     public void validateAllGymCentres();
     public void validateGymCentreByID(String gymCentreId, int isApproved);
+    public void adminChangePassword(String userName, String old_password, String new_password);
+
 }

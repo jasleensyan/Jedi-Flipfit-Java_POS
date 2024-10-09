@@ -41,4 +41,9 @@ public class FlipFitAdminService implements FlipFitAdminServiceInterface {
     public void validateGymCentreByID(String gymCentreId, int isApproved) {
 
     }
+
+    @Override
+    public void adminChangePassword(String userName, String old_password, String new_password) {
+
+    }
 }
