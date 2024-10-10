@@ -49,11 +49,12 @@ public class FlipfitApplicationMenu {
             FlipfitAdminMenu adminMenu = new FlipfitAdminMenu();
             adminMenu.mainPage();
         }
-        else if( login.equals("user") ){
+        else if( login.equals("customer") ){
             FlipfitCustomerMenu customerMenu = new FlipfitCustomerMenu();
+            customerMenu.customerClientMainPage("user","1");
 
         }
-        else if( login.equals("customer") ){
+        else if( login.equals("gym owner") ){
             FlipfitCustomerMenu customerMenu = new FlipfitCustomerMenu();
         }
         else {
