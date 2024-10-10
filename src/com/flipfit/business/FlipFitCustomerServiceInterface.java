@@ -1,8 +1,8 @@
 package com.flipfit.business;
 
-import com.flipfit.bean.Booking;
+//import com.flipfit.bean.Booking;
 import com.flipfit.bean.FlipFitCustomer;
-import com.flipfit.bean.FlipFitGymCentre;
+//import com.flipfit.bean.FlipFitGymCentre;
 import com.flipfit.exception.InvalidCredentialsException;
 
 import java.sql.Date;
@@ -10,13 +10,16 @@ import java.sql.Timestamp;
 import java.util.List;
 
 public interface FlipFitCustomerServiceInterface {
-    List<FlipFitGymCentre> getAllGymCenterDetailsByCity(String city);
-    List<Booking> getCustomerBookings(String customerId);
-    boolean bookSlot(String userID, Date date, String slotId, String centreId);
+//    List<FlipFitGymCentre> getAllGymCenterDetailsByCity(String city);
+//    List<Booking> getCustomerBookings(String customerId);
+//    boolean bookSlot(String userID, Date date, String slotId, String centreId);
     void cancelBooking(String bookingID);
     public boolean customerLogin(String userName, String password);
     public FlipFitCustomer register();
     public FlipFitCustomer viewMyProfile(String customerId);
+
+    public void viewMyProfile(FlipFitCustomer customer);
+
     public String getSlotIdFromGymCentreAndTimestamp(String gymOwner, Timestamp timestamp);
     public Integer getBookingCountFromSlotId(String slotId);
     public Integer getGymCentreCapacityFromCentreId(String centerId);
