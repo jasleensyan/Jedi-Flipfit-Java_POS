@@ -42,7 +42,7 @@ public class FlipfitApplicationMenu {
         System.out.println("Please enter your login details: ");
 
         String login = scanner.next();
-        String password = scanner.next();
+//        String password = scanner.next();
 
 
         if( login.equals("admin") ){
@@ -54,8 +54,9 @@ public class FlipfitApplicationMenu {
             customerMenu.customerClientMainPage("user","1");
 
         }
-        else if( login.equals("gym owner") ){
-            FlipfitCustomerMenu customerMenu = new FlipfitCustomerMenu();
+        else if( login.equals("gymowner") ){
+            FlipfitGymOwnerMenu gymOwnerMenu = new FlipfitGymOwnerMenu();
+            gymOwnerMenu.gymOwnerClientMainPage();
         }
         else {
             System.out.println("Enter Correct details");
