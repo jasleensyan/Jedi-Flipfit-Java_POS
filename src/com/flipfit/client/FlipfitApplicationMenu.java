@@ -1,5 +1,9 @@
 package com.flipfit.client;
 
+import com.flipfit.utils.DBConnection;
+
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 import static com.flipfit.constant.Constants.*;
@@ -12,7 +16,6 @@ public class FlipfitApplicationMenu {
         System.out.println("---------------------------------------------------------------------------");
         System.out.println("1. Login\n2. Registration of the GYM Customer\n3. Registration of the GYM Owner\n4. Update Password\n5. Exit");
         System.out.println("---------------------------------------------------------------------------");
-
         System.out.println("Enter your choice: ");
         int choice = scanner.nextInt();
         switch (choice) {
