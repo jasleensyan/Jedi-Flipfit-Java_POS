@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ea5a4b35-1237-46d5-ad71-70f7d26e0c4e" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitCustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitCustomerMenu.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymOwnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymOwnerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymOwnerServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymOwnerServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitGymOwnerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitGymOwnerMenu.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +25,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.FlipfitApplicationMenu.executor": "Run",
+<<<<<<< Updated upstream
     "git-widget-placeholder": "main"
+=======
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "clientClass",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Applications/JEDI-Flipfit-JAVA-POS/src/com/flipfit/bean",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> Stashed changes
   }
 }]]></component>
   <component name="TaskManager">
