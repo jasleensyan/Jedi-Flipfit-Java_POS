@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ea5a4b35-1237-46d5-ad71-70f7d26e0c4e" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitCustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitCustomerMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

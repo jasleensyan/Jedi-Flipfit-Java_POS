@@ -13,7 +13,7 @@ import static com.flipfit.constant.Constants.PREVIOUS_MENU_MESSAGE;
 public class FlipfitCustomerMenu {
     public static Scanner scanner = new Scanner(System.in);
     FlipFitCustomerServiceInterface flipFitCustomerService = new FlipFitCustomerService();
-
+    FlipFitCustomer customer = new FlipFitCustomer();
 
 
     public void customerLogin(String userName, String password){
@@ -40,24 +40,13 @@ public class FlipfitCustomerMenu {
         System.out.println("Customer Change Password");
     }
 
-    public void printCustomerProfile(String username) {
-        FlipFitCustomer customer =flipFitCustomerService.viewMyProfile(username);
-        if(customer == null){System.out.println("USER NAME: "+username);return;}
-        System.out.println("------------------------------------------------------------------------");
-        System.out.println("USER ID: "+ customer.getUserID()==null?"null":customer.getUserID());
-        System.out.println("USER NAME: "+ customer.getUserName()==null?"null":customer.getUserName());
-        System.out.println("EMAIL: "+  customer.getEmail()==null?"null":customer.getEmail());
-        System.out.println("CONTACT: "+  customer.getCustomerPhone()==null?"null":customer.getCustomerPhone());
-        System.out.println("CARD DETAILS: "+  customer.getCardDetails()==null?"null":customer.getCardDetails());
-        System.out.println("---------------------------------------------------------------------------");
-    }
-
     public void customerClientMainPage(String username, String customerId){
         System.out.println("---------------------------------------------------------------------------");
         System.out.println("Welcome to customer main page!!");
         LocalDateTime currentTime = LocalDateTime.now();
         System.out.println("Login TIME: "+currentTime);
         System.out.println("---------------------------------------------------------------------------");
+        this.customer= new FlipFitCustomer("1",username,"email@email.com", "password","000999000","aaabbbccc");
 
         while(true) {
             System.out.println("1. View Profile \n2. Book a slot in Gym \n3. View Bookings\n4. Cancel Bookings\n5. Go Back to previous menu");
@@ -65,8 +54,7 @@ public class FlipfitCustomerMenu {
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
-                    FlipFitCustomer customerProfile = flipFitCustomerService.viewMyProfile(customerId);
-                    printCustomerProfile(username);
+                    flipFitCustomerService.viewMyProfile(customer);
                     break;
 
                 case 2:
