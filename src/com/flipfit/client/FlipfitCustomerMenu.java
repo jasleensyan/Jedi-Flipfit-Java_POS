@@ -13,6 +13,9 @@ import static com.flipfit.constant.Constants.PREVIOUS_MENU_MESSAGE;
 public class FlipfitCustomerMenu {
     public static Scanner scanner = new Scanner(System.in);
     FlipFitCustomerServiceInterface flipFitCustomerService = new FlipFitCustomerService();
+
+
+
     public void customerLogin(String userName, String password){
         System.out.println("Customer Login");
     }
@@ -37,13 +40,15 @@ public class FlipfitCustomerMenu {
         System.out.println("Customer Change Password");
     }
 
-    public void printCustomerProfile(FlipFitCustomer customer) {
+    public void printCustomerProfile(String username) {
+        FlipFitCustomer customer =flipFitCustomerService.viewMyProfile(username);
+        if(customer == null){System.out.println("USER NAME: "+username);return;}
         System.out.println("------------------------------------------------------------------------");
-        System.out.println("USER ID: "+ customer.getUserID());
-        System.out.println("USER NAME: "+ customer.getUserName());
-        System.out.println("EMAIL: "+  customer.getEmail());
-        System.out.println("CONTACT: "+  customer.getCustomerPhone());
-        System.out.println("CARD DETAILS: "+  customer.getCardDetails());
+        System.out.println("USER ID: "+ customer.getUserID()==null?"null":customer.getUserID());
+        System.out.println("USER NAME: "+ customer.getUserName()==null?"null":customer.getUserName());
+        System.out.println("EMAIL: "+  customer.getEmail()==null?"null":customer.getEmail());
+        System.out.println("CONTACT: "+  customer.getCustomerPhone()==null?"null":customer.getCustomerPhone());
+        System.out.println("CARD DETAILS: "+  customer.getCardDetails()==null?"null":customer.getCardDetails());
         System.out.println("---------------------------------------------------------------------------");
     }
 
@@ -61,7 +66,7 @@ public class FlipfitCustomerMenu {
             switch (choice) {
                 case 1:
                     FlipFitCustomer customerProfile = flipFitCustomerService.viewMyProfile(customerId);
-                    printCustomerProfile(customerProfile);
+                    printCustomerProfile(username);
                     break;
 
                 case 2:
