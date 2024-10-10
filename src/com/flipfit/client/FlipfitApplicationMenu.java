@@ -52,6 +52,12 @@ public class FlipfitApplicationMenu {
             FlipfitCustomerMenu customerMenu = new FlipfitCustomerMenu();
 
         }
+        else if( login.equals("customer") ){
+            FlipfitCustomerMenu customerMenu = new FlipfitCustomerMenu();
+        }
+        else {
+            System.out.println("Enter Correct details");
+        }
 
     }
 
