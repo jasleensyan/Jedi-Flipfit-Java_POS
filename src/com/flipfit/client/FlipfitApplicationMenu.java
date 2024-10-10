@@ -42,6 +42,7 @@ public class FlipfitApplicationMenu {
         System.out.println("Please enter your login details: ");
 
         String login = scanner.next();
+        String password = scanner.next();
 
 
         if( login.equals("admin") ){
