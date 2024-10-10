@@ -40,6 +40,19 @@ public class FlipfitApplicationMenu {
 
     private static void login(){
         System.out.println("Please enter your login details: ");
+
+        String login = scanner.next();
+
+
+        if( login.equals("admin") ){
+            FlipfitAdminMenu adminMenu = new FlipfitAdminMenu();
+            adminMenu.mainPage();
+        }
+        else if( login.equals("user") ){
+            FlipfitCustomerMenu customerMenu = new FlipfitCustomerMenu();
+
+        }
+
     }
 
     private static void registration(){

@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0920dba2-a305-49be-bb30-965f9cc46be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/flipfit/bean/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitAdminMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitAdminMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitApplicationMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitApplicationMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.FlipfitApplicationClient.executor": "Run",
+    "Application.FlipfitApplicationMenu.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
