@@ -55,8 +55,8 @@ public class FlipfitApplicationMenu {
 
         }
         else if( login.equals("gymowner") ){
-            FlipfitCustomerMenu customerMenu = new FlipfitCustomerMenu();
-            customerMenu.customerClientMainPage("gymowner","2");
+            FlipfitGymOwnerMenu gymOwnerMenu = new FlipfitGymOwnerMenu();
+            gymOwnerMenu.gymOwnerClientMainPage();
         }
         else {
             System.out.println("Enter Correct details");
