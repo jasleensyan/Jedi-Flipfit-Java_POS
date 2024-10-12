@@ -3,11 +3,9 @@ package com.flipfit.business;
 //import com.flipfit.bean.Booking;
 import com.flipfit.bean.FlipFitCustomer;
 //import com.flipfit.bean.FlipFitGymCentre;
-import com.flipfit.exception.InvalidCredentialsException;
 
 import java.sql.Date;
 import java.sql.Timestamp;
-import java.util.List;
 
 public class FlipFitCustomerService implements FlipFitCustomerServiceInterface{
 //    @Override
@@ -57,6 +55,11 @@ public class FlipFitCustomerService implements FlipFitCustomerServiceInterface{
         System.out.println("---------------------------------------------------------------------------");
     }
 
+    @Override
+    public void bookSlot(String customerId, String slotID, String gymID, Date date) {
+        System.out.println("Showing your booking status");
+    }
+
 
 //    @Override
 //    public FlipFitCustomer viewMyProfile(String  customer) {
@@ -104,7 +107,12 @@ public class FlipFitCustomerService implements FlipFitCustomerServiceInterface{
     }
 
     @Override
-    public void customerChangePassword(String userName, String old_password, String new_password) throws InvalidCredentialsException {
+    public void customerChangePassword(String userName, String old_password, String new_password) {
+        return;
+    }
 
+    @Override
+    public void printUserPlan(String userName) {
+        System.out.println("Showing user plan");
     }
 }
