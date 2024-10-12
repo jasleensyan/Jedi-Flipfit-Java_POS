@@ -1,6 +1,6 @@
 package com.flipfit.client;
 
-//import com.flipfit.business.FlipFitAdminService;
+import com.flipfit.business.FlipFitAdminService;
 import java.util.Scanner;
 
 import static com.flipfit.constant.Constants.*;
@@ -8,31 +8,39 @@ import static com.flipfit.constant.Constants.*;
 public class FlipfitAdminMenu {
 
     public static Scanner scanner = new Scanner(System.in);
+    public static FlipFitAdminService adminService = new FlipFitAdminService();
 
     public  void mainPage(){
         System.out.println(WELCOME_MESSAGE);
-        adminLogin("name", "");
+//        adminLogin("name", "");
         System.out.println("---------------------------------------------------------------------------");
-        System.out.println("1. View Report \n2. View list of All GYM Centres and Owners \n3. Review all pending Registration of the GYM Customer\n4. Review all pending Registration of the GYM Owner\n5. Update Password\n6. Exit");
+        System.out.println("1. View All Gym Owners\n2. Approve all gym owners requests\n3. Approve gym owner's request by Id\n" +
+                "4. View All Gym Centers\n5. Approve all gym centre requests\n6. Approve gym centre's request by Id\n7. Go Back To Previous Menu");
         System.out.println("---------------------------------------------------------------------------");
 
         System.out.println("Enter your choice: ");
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
-                System.out.println("Report");
+                adminService.viewAllGymOwners();
                 break;
             case 2:
-                System.out.println("list");
+                adminService.validateAllGymOwners();
                 break;
             case 3:
-                System.out.println("WELCOME_MESSAGE");
+                adminService.validateGymOwnerByID("ownerID", 0);
+                break;
+            case 4:
+                adminService.viewAllGymCentres();
                 break;
             case 5:
-                adminChangePassword("yes","yes"," ");
+                adminService.validateAllGymCentres();
                 break;
             case 6:
-                System.out.println(EXIT_MESSAGE);
+                adminService.validateGymCentreByID("gymID", 0);
+                return;
+            case 7:
+                System.out.println(PREVIOUS_MENU_MESSAGE);
                 return;
             default:
                 System.out.println(INVALID_CHOICE_ERROR);
@@ -40,8 +48,6 @@ public class FlipfitAdminMenu {
         }
         mainPage();
     }
-//    FlipFitAdminService adminService = new FlipFitAdminService();
-
 
     public void adminLogin(String userName, String password){
         System.out.println("Welcome " + userName);

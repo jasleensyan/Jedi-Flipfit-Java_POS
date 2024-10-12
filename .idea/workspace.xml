@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0920dba2-a305-49be-bb30-965f9cc46be1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/flipfit/utils/DBConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JEDI-Flipfit-JAVA-POS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JEDI-Flipfit-JAVA-POS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitApplicationMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitApplicationMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitCustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitCustomerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitGymOwnerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitGymOwnerMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
     "Application.FlipfitApplicationMenu.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "clientClass",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Applications/JEDI-Flipfit-JAVA-POS/src/com/flipfit/bean",
     "node.js.selected.package.tslint": "(autodetect)",
