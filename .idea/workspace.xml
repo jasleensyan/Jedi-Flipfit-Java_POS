@@ -6,16 +6,38 @@
   <component name="ChangeListManager">
     <list default="true" id="0920dba2-a305-49be-bb30-965f9cc46be1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< Updated upstream
-      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitAdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitCustomerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitCustomerMenu.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymOwnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymOwnerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymOwnerServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymOwnerServiceInterface.java" afterDir="false" />
->>>>>>> Stashed changes
-      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitGymOwnerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitGymOwnerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/Booking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/FlipFitAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/FlipFitCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/FlipFitGymCentre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/FlipFitGymOwner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/Notification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/Payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/Schedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/Slot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/bean/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/BookingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/BookingServiceInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitAdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitAdminServiceInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitCustomerServiceInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymCenterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymCenterServiceInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymOwnerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/FlipFitGymOwnerServiceInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/SlotService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/business/SlotServiceInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitAdminMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitApplicationMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitCustomerMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/client/FlipfitGymOwnerMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/constant/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/dao/CustomerDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/exception/InvalidCredentialsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/utils/DBConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/flipfit/validation/InputValidation.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,24 +73,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.FlipfitApplicationClient.executor": "Run",
-    "Application.FlipfitApplicationMenu.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "clientClass",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Applications/JEDI-Flipfit-JAVA-POS/src/com/flipfit/bean",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.FlipfitApplicationClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FlipfitApplicationMenu.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Applications/JEDI-Flipfit-JAVA-POS/src/com/flipfit/bean&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/flipfit/bean" />
@@ -95,6 +117,7 @@
       <updated>1728450962283</updated>
       <workItem from="1728450963263" duration="1172000" />
       <workItem from="1728454953346" duration="7662000" />
+      <workItem from="1728750382815" duration="33000" />
     </task>
     <servers />
   </component>
