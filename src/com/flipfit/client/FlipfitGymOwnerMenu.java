@@ -17,7 +17,7 @@ public class FlipfitGymOwnerMenu {
     public void gymOwnerClientMainPage(){
         System.out.println("Welcome to gym owner main page!!");
         System.out.println("---------------------------------------------------------------------------");
-        System.out.println("" +
+        System.out.println(" " +
                 "1. View all Gym Owners\n" +
                 "2. Register New Gym Owner\n" +
                 "3. View all Gym Centers by OwnerID\n" +
