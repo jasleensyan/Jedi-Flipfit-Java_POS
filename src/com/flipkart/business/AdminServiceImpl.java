@@ -63,8 +63,8 @@ public class AdminServiceImpl implements AdminServiceInterface {
     public void viewAllGymCentres(){
         List<GymCentre> gymCentres = adminDAO.getGymCentersList();
 
-//        List<String> gymCenterNames = new ArrayList<>();
-//        gymCentres.forEach(gymCentre -> {gymCenterNames.add(gymCentre.getCentreName());});
+//        List<String> gymcentreNames = new ArrayList<>();
+//        gymCentres.forEach(gymCentre -> {gymcentreNames.add(gymCentre.getCentreName());});
         System.out.println("--------------------------------------------------------------------------------------------------------------------------------");
         System.out.printf("| %-10s | %-10s | %-20s | %-15s | %-15s | %-8s | %-10s | %-15s |\n",
                 "Centre ID", "Owner ID", "Centre Name", "GST No", "City", "Capacity", "Approved", "Amount/Slot");
@@ -76,7 +76,7 @@ public class AdminServiceImpl implements AdminServiceInterface {
         }
         System.out.println("--------------------------------------------------------------------------------------------------------------------------------");
 
-//        System.out.println(gymCenterNames);
+//        System.out.println(gymcentreNames);
 
     }
     @Override

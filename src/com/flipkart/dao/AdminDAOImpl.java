@@ -27,10 +27,10 @@ public class AdminDAOImpl implements AdminDAO{
             List<GymCentre> gymCentres = new ArrayList<>();
             while(rs.next()) {
                 GymCentre gymCentre = new GymCentre(
-                        rs.getString("centerId"),
+                        rs.getString("centreId"),
                         rs.getString("ownerId"),
-                        rs.getString("centerName"),
-                        rs.getString("gstNumber"),
+                        rs.getString("centreName"),
+                        rs.getString("gstNo"),
                         rs.getString("city"),
                         rs.getInt("capacity"),
                         rs.getInt("approved"),

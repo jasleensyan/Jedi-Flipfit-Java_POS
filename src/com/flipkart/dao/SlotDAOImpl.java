@@ -23,7 +23,7 @@ public class SlotDAOImpl implements SlotDAO {
 
             stmt.setString(1, slot.getSlotId());
             stmt.setString(2, slot.getCentreId());
-            stmt.setTimestamp(3, new java.sql.Timestamp(slot.getTime().getTime()));
+            stmt.setTime(3, new java.sql.Time(slot.getTime().getTime()));
 
             int rowsInserted = stmt.executeUpdate();
             System.out.println(rowsInserted + " record(s) inserted");

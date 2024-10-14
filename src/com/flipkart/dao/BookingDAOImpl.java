@@ -20,7 +20,7 @@ public class BookingDAOImpl implements BookingDAO{
     public List<BookingDetails> getBookingByCustomerId(String username) throws BookingFailedException {
         List<BookingDetails> allBookingDetailsList = new ArrayList<>();
         String getUserIdQuery = "SELECT userId FROM user WHERE userName = ?";
-        String getBookingsQuery = "SELECT b.bookingId, b.userId, b.scheduleId, s.slotId, slot.centreId, gym_center.centerName, gym_center.city, s.date FROM booking b JOIN schedule s ON b.scheduleId = s.scheduleId JOIN slot ON s.slotId = slot.slotId JOIN gym_center ON slot.centreId = gym_center.centerId WHERE b.userId = ?";
+        String getBookingsQuery = "SELECT b.bookingId, b.userId, b.scheduleId, s.slotId, slot.centreId, gym_centre.centreName, gym_centre.city, s.date FROM booking b JOIN schedule s ON b.scheduleId = s.scheduleId JOIN slot ON s.slotId = slot.slotId JOIN gym_centre ON slot.centreId = gym_centre.centreId WHERE b.userId = ?";
 
 
         try {
@@ -49,7 +49,7 @@ public class BookingDAOImpl implements BookingDAO{
                 BookingDetails bookingDetails = new BookingDetails(
                         bookingsRs.getString("bookingId"),
                         bookingsRs.getDate("date"),
-                        bookingsRs.getString("centerName"),
+                        bookingsRs.getString("centreName"),
                         bookingsRs.getString("city")
                 );
                 allBookingDetailsList.add(bookingDetails);

@@ -113,10 +113,10 @@ public interface CustomerServiceInterface {
     /**
      * Retrieves the capacity of a gym center based on the provided center ID.
      *
-     * @param  centerId  the ID of the gym center for which the capacity is requested
+     * @param  centreId  the ID of the gym center for which the capacity is requested
      * @return the capacity of the specified gym center
      */
-    public Integer getGymCentreCapacityFromCentreId(String centerId);
+    public Integer getGymCentreCapacityFromCentreId(String centreId);
 
     /**
      * Adds a new schedule to the database.
@@ -130,10 +130,10 @@ public interface CustomerServiceInterface {
     /**
      * Retrieves the cost of a gym center based on the provided center ID.
      *
-     * @param  centerId  the ID of the gym center for which the cost is requested
+     * @param  centreId  the ID of the gym center for which the cost is requested
      * @return the cost of the specified gym center
      */
-    public float getGymCentreCostFromCentreId(String centerId);
+    public float getGymCentreCostFromCentreId(String centreId);
 
     /**
      * Adds a new payment to the database.

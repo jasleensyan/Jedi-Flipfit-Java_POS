@@ -163,25 +163,30 @@ public class GymOwnerFlipfitMenu {
 
                         scanner.nextLine();
 
-                        System.out.println("Enter time in 24h format (hh:mm:ss) : ");
+                        System.out.println("Enter time in 24h format (hh:mm:ss): ");
                         time = scanner.nextLine();
 
-                        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-                        Date localTime = formatter.parse(time);
+                        try {
+                            // Use the correct format for parsing time
+                            SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss");
+                            Date localTime = formatter.parse(time);
 
-                        newSlotList.add(new Slot(
-                                slotId,
-                                centreId,
-                                localTime
-                        ));
+                            newSlotList.add(new Slot(
+                                    slotId,
+                                    centreId,
+                                    localTime
+                            ));
 
-                        String addChoice = null;
-                        System.out.println("Do you want to enter more slots (y/n)?: ");
-                        addChoice = scanner.next();
-                        addChoice = addChoice.toLowerCase();
+                            String addChoice = null;
+                            System.out.println("Do you want to enter more slots (y/n)?: ");
+                            addChoice = scanner.next();
+                            addChoice = addChoice.toLowerCase();
 
-                        if(addChoice.equals("n") || addChoice.equals("no")) {
-                            isAdding = false;
+                            if(addChoice.equals("n") || addChoice.equals("no")) {
+                                isAdding = false;
+                            }
+                        } catch (Exception e) {
+                            System.out.println("Invalid time format.");
                         }
                     }
 

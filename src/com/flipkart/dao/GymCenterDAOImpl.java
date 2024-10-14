@@ -84,10 +84,10 @@ public class GymCenterDAOImpl implements GymCenterDAO {
             ResultSet rs = statement.executeQuery();
             while(rs.next()) {
                 GymCentre gymCentre = new GymCentre(
-                        rs.getString("centerId"),
+                        rs.getString("centreId"),
                         rs.getString("ownerId"),
-                        rs.getString("centerName"),
-                        rs.getString("gstNumber"),
+                        rs.getString("centreName"),
+                        rs.getString("gstNo"),
                         rs.getString("city"),
                         rs.getInt("capacity"),
                         rs.getInt("approved"),
@@ -106,13 +106,13 @@ public class GymCenterDAOImpl implements GymCenterDAO {
     }
 
     @Override
-    public Integer getCapacityFromCenterId(String centerId) {
+    public Integer getCapacityFromcentreId(String centreId) {
         Integer gymCentreCapacity = 0;
         try {
             conn = DBConnection.connect();
             System.out.println("Fetching gyms centre capacity");
             statement = conn.prepareStatement(SQLConstants.FETCH_GYM_CENTRE_CAPACITY);
-            statement.setString(1, centerId);
+            statement.setString(1, centreId);
             ResultSet rs = statement.executeQuery();
             while(rs.next()) {
                 gymCentreCapacity = rs.getInt("capacity");
@@ -191,13 +191,13 @@ public class GymCenterDAOImpl implements GymCenterDAO {
 
 
     @Override
-    public float getCostFromCenterId(String centerId) {
+    public float getCostFromcentreId(String centreId) {
         float gymCentreCost = 0;
         try {
             conn = DBConnection.connect();
             System.out.println("Fetching gyms centre cost");
             statement = conn.prepareStatement(SQLConstants.FETCH_GYM_CENTRE_COST);
-            statement.setString(1, centerId);
+            statement.setString(1, centreId);
             ResultSet rs = statement.executeQuery();
             while(rs.next()) {
                 gymCentreCost = rs.getInt("amountPerSlot");

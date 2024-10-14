@@ -30,10 +30,10 @@ public interface GymCenterDAO {
     /**
      * Retrieves the capacity from the gym center with the given center ID.
      *
-     * @param  centerId   the ID of the gym center
+     * @param  centreId   the ID of the gym center
      * @return            the capacity of the gym center
      */
-    public Integer getCapacityFromCenterId(String centerId);
+    public Integer getCapacityFromcentreId(String centreId);
 
     /**
      * Adds a new gym center with the provided details.
@@ -60,8 +60,8 @@ public interface GymCenterDAO {
     /**
      * Retrieves the cost from the gym center with the given center ID.
      *
-     * @param  centerId   the ID of the gym center
+     * @param  centreId   the ID of the gym center
      * @return            the cost of the gym center
      */
-    public float getCostFromCenterId(String centerId);
+    public float getCostFromcentreId(String centreId);
 }

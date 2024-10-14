@@ -37,7 +37,7 @@ public class CustomerServiceImpl implements  CustomerServiceInterface{
     }
     @Override
     public boolean bookSlot(String userID, Date date, String slotId, String centreId) {
-        return false;
+        return true;
     }
 
     @Override
@@ -86,8 +86,8 @@ public class CustomerServiceImpl implements  CustomerServiceInterface{
     }
 
     @Override
-    public Integer getGymCentreCapacityFromCentreId(String centerId) {
-        return gymCenterDAO.getCapacityFromCenterId(centerId);
+    public Integer getGymCentreCapacityFromCentreId(String centreId) {
+        return gymCenterDAO.getCapacityFromcentreId(centreId);
     }
 
     @Override
@@ -96,8 +96,8 @@ public class CustomerServiceImpl implements  CustomerServiceInterface{
     }
 
     @Override
-    public float getGymCentreCostFromCentreId(String centerId) {
-        return  gymCenterDAO.getCostFromCenterId(centerId);
+    public float getGymCentreCostFromCentreId(String centreId) {
+        return  gymCenterDAO.getCostFromcentreId(centreId);
     }
 
     @Override
